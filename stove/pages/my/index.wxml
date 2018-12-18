@@ -1,0 +1,11 @@
+<!--pages/my/index.wxml-->
+<view class="container">
+   <view class="user-info">
+         <view class="img">
+            <image src="/img/hb1.jpg"></image>
+         </view>
+      <text class="user-name">{{userInfo.nickname}}</text>
+   </view>
+   <button type="{{btnType}}" class="btn-login" bindtap="loginout" disabled='{{disabled}}'>注销</button>
+   <button class='back' bindtap='back'>返回</button>
+</view> 

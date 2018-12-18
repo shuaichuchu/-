@@ -1,0 +1,6 @@
+<view>
+  <map class="mmap" id='mymap' bindmarkertap="markertap" longitude="{{blongitude}}" latitude="{{blatitude}}" markers="{{markers}}" show-location='true' scale='{{scale}}' polyline='{{polyline}}'>
+  <cover-image src='/img/dv.png' class='dv' bindtap='getlocation'></cover-image>
+  <cover-image src='/img/user.png' class='user' bindtap='getuser' open-type="getUserInfo"></cover-image>
+  </map>
+</view>

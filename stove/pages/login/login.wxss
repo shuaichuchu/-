@@ -1,0 +1,83 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+.title{
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+.titlev{
+  font-size: 30px;
+}
+
+.mview{
+  height: 60%;
+  margin-left: 10%;
+  margin-right: 10%;
+  vertical-align: 'center';
+  margin-top: 5%;
+  margin-bottom: 20%;
+  text-align: center;
+  /* box-shadow: 1px 1px 5px 5px #888888; */
+
+}
+.header{
+   border-radius: 50%;
+   width: 70px; 
+   height: 70px; 
+   background-color: #ffffff;
+   margin-top: 20px;
+}
+.username{
+  border: 1px 	white solid;
+  border-radius: 20px;
+  min-height: 30px;
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+}
+.pwd{
+  border: 1px 	white solid;
+  border-radius: 20px;
+  min-height: 30px;
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+}
+.loginbtn{
+  border: 1px 	#909090 solid;
+  border-radius: 20px;
+  min-height: 30px;
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  background-color: red;
+  color: white;
+}
+.wjpwd{
+  font-size: 12px;
+  margin-left: 20%;
+  color: 		white;
+}
+.wjpwdview{
+  width:100%;
+  text-align:left;
+}
+.mbgview{
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  bottom: 0px;
+  position:fixed; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

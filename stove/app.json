@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/login/login",
+    "pages/wjpwd/wjpwd",
+    "pages/details/details",
+    "pages/repair/repair",
+    "pages/logs/logs" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧祭祀炉",
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  }
+}

@@ -1,0 +1,139 @@
+<view class='pageview' style='height:{{height}};margin-top:20%;'>
+  <view class='titleview'>
+    <image class='imginfo' src='/img/service.png'></image>
+    <text class='titletxt'>维护</text>
+  </view>
+  <view>
+    <view class='tr attribute'>
+      <view class='td1 font'>名称</view>
+      <view class='td2 font'>{{name}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>编号</view>
+      <view class='td2  font'>{{number}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>类型</view>
+      <view class='td2  font'>{{type}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>卡号</view>
+      <view class='td2  font'>{{cardNum}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font' style='color:{{pump_color}}'>故障维护</view>
+    </view>
+    <view class='table'>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='9' class='green' style="background-color:{{bgColor[9]}}" bindtap='clickgz'>防冻液液位</button>
+        </view>
+        <view class='td3'>
+          <button id='10' class='green' style="background-color:{{bgColor[10]}}" bindtap='clickgz'>过载跳闸</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='11' class='green' style="background-color:{{bgColor[11]}}" bindtap='clickgz'>短路跳闸</button>
+        </view>
+        <view class='td3'>
+          <button id='12' class='green' style="background-color:{{bgColor[12]}}" bindtap='clickgz'>水泵手动不运行</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='13' class='green' style="background-color:{{bgColor[13]}}" bindtap='clickgz'>水泵自动不运行</button>
+        </view>
+        <view class='td3'>
+          <button id='14' class='green' style="background-color:{{bgColor[14]}}" bindtap='clickgz'>引风手动不运行</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='15' class="green" style="background-color:{{bgColor[15]}}" bindtap='clickgz'>引风自动不运行</button>
+        </view>
+        <view class='td3'>
+          <button id='16' class='green' style="background-color:{{bgColor[16]}}" bindtap='clickgz'>散热手动不运行</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='17' class="green" style="background-color:{{bgColor[17]}}" bindtap='clickgz'>散热自动不运行</button>
+        </view>
+        <view class='td3'>
+          <button id='18' class='green' style="background-color:{{bgColor[18]}}" bindtap='clickgz'>LED屏幕</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='19' class="green" style="background-color:{{bgColor[19]}}" bindtap='clickgz'>照明灯</button>
+        </view>
+        <view class='td3'>
+          <button id='20' class='green' style="background-color:{{bgColor[20]}}" bindtap='clickgz'>红外人体检测</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='21' class="green" style="background-color:{{bgColor[21]}}" bindtap='clickgz'>远程通信中断</button>
+        </view>
+        <view class='td3'></view>
+      </view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font' style='color:{{pump_color}}'>日常维护</view>
+    </view>
+    <form bindsubmit='onsub'>
+    <view class='table'>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='1' class='green' style="background-color:{{bgColor[1]}}" bindtap='clickgz'>防冻液</button>
+        </view>
+        <view class='td3'>
+          <button id='2' class='green' style="background-color:{{bgColor[2]}}" bindtap='clickgz'>水泵</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='3' class='green' style="background-color:{{bgColor[3]}}" bindtap='clickgz'>烟道引风机</button>
+        </view>
+        <view class='td3'>
+          <button id='4' class='green' style="background-color:{{bgColor[4]}}" bindtap='clickgz'>除尘引风机</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='5' class='green' style="background-color:{{bgColor[5]}}" bindtap='clickgz'>通风散热风机</button>
+        </view>
+        <view class='td3'>
+          <button id='6' class='green' style="background-color:{{bgColor[6]}}" bindtap='clickgz'>LED屏幕</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='7' class="green" style="background-color:{{bgColor[7]}}" bindtap='clickgz'>照明灯</button>
+        </view>
+        <view class='td3'>
+          <button id='8' class='green' style="background-color:{{bgColor[8]}}" bindtap='clickgz'>红外人体检测</button>
+        </view>
+      </view>
+      <view class='tr'>
+        <view class='td3'>
+          <button id='22' class='green' style="background-color:{{bgColor[22]}}" bindtap='clickgz'>滤芯更换</button>
+        </view>
+        <view class='td3'></view>
+      </view>
+      <view class='tr attribute'>
+        <view class='td1 font' style='color:{{pump_color}}'>备注</view>
+      </view>
+      <view class='table'>
+        <view class='tr'>
+          <textarea maxlength='-1' class='mtxtarea' name='mark' />
+        </view>
+      </view>
+    </view>
+    <button form-type='submit' disabled='{{disabled}}' class='btn wh'>维护完成</button>
+    <button class='btn back' bindtap='onback'>返回地图</button>
+     </form>
+  </view>
+  
+</view>

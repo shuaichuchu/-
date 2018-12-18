@@ -1,0 +1,46 @@
+<view class='pageview' style='height:{{height}};margin-top:20%;'>
+  <view class='titleview'>
+    <image class='imginfo' src='/img/info.png'></image><text class='titletxt'>信息</text></view>
+  <view class='table'>
+    <view class='tr attribute'>
+      <view class='td1 font'>名称</view>
+      <view class='td2 font'>{{name}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>编号</view>
+      <view class='td2  font'>{{number}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>类型</view>
+      <view class='td2  font'>{{type}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>卡号</view>
+      <view class='td2  font'>{{cardNum}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>状态</view>
+      <view class='td2  font' style='color:{{status_color}}'>{{status}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font' style='display:{{faultTime_display}}'>故障时间</view>
+      <view class='td2  font' style='display:{{faultTime_display}}'>{{faultTime}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font' style='display:{{details_display}}'>故障详情</view>
+      <view class='td2  font' style='display:{{details_display}}'>{{details}}</view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>位置</view>
+      <view class='td2'>
+        <map class='mmap' longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}'></map>
+      </view>
+    </view>
+    <view class='tr attribute'>
+      <view class='td1 font'>地址</view>
+      <view class='td2  font'>{{address}}</view>
+    </view>
+    <button class='btn wh' bindtap='towh' disabled='{{sdisabled}}'>设备维护</button>
+    <button class='btn back' bindtap='onback' disabled='{{bdisabled}}'>返回地图</button>
+  </view>
+</view>

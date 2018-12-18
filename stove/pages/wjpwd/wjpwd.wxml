@@ -1,0 +1,11 @@
+<view>
+<!-- <view class='title'>找回密码</view> -->
+  <form bindsubmit='onsubmit'>
+    <view class='zhview'>
+      <text class='txt'>账号：</text>
+      <input type='text' class='username' id='email' name='email' value='{{email}}' placeholder='请填写注册时的邮箱' />
+    </view>
+    <button class='sub' form-type='submit' disabled='{{disbaled}}'>{{submit}}</button>
+    <button class='back' bindtap='back'>返回</button>
+  </form>
+</view>

@@ -1,0 +1,19 @@
+<!-- <image src='/img/white.png' mode='scaleToFill' style="width: 100%; height: 500px; background-color: #eeeeee;"></image> -->
+
+<scroll-view class='mbgview' style="background-image: url('http://106.3.79.111/imgs/bgimg.jpg')">
+  <view class='title'>
+    <text class='titlev'>登录</text>
+    <!-- <image animation='{{animationData}}' src='/img/cloud.png' class='yun' style='left:{{left}};'></image> -->
+  </view>
+  <view class='mview'>
+    <form bindsubmit='onsubmit'>
+      <image class='header' src='/img/hb1.jpg' mode='center' animation='{{animationHeader}}'></image>
+      <input class='username' type='text' id='username' name='phone' placeholder='手机号/邮箱' value='' cursor-spacing='0'></input>
+      <input class='pwd' type='text' id='password' name='password' placeholder='密码' password='true' value='' cursor-spacing='20px'></input>
+      <view class='wjpwdview'>
+          <text class='wjpwd' selectable='true' disabled bindtap='wjpwd'>忘记密码？</text>
+      </view>
+      <button class='loginbtn' form-type='submit' disabled='{{disabled}}'>{{logintext}}</button>
+    </form>
+  </view>
+</scroll-view>

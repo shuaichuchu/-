@@ -1,0 +1,34 @@
+/* login/wjpwd.wxss */
+.username{
+   text-align: left;
+   height: 40px;
+}
+.txt{
+  float: left;
+  margin-top: 2%;
+}
+.zhview{
+  width: 100%;
+  margin-top: 20%;
+  background-color: white;
+  border-bottom: 1px 	#909090 solid;
+  border-top: 1px 	#909090 solid;
+  vertical-align: bottom;
+}
+page{
+  background-color: #F5F5F5;
+}
+.title{
+  font-size: 30px;
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+.sub{
+  margin-top: 5%;
+  background-color: #1C86EE;
+}
+.back{
+  margin-top: 5%;
+  background-color: gainsboro;
+}
